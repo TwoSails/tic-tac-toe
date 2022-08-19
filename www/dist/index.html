@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe with Minimax AI implementation</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+    <div class="settings">
+      <p class="settings-label">vsAI: <span class="setting" id="ai-setting-output">false</span></p>
+      <label class="ai-setting switch">
+        <input type="checkbox" name="ai-setting" id="ai-setting">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div class="content">
+      <h1 id="title">Tic Tac Toe</h1>
+      <h4 id="tagline">A basic implementation of a Minimax algorithm to act as another player.</h4>
+      <p id="description">My first independent Rust + WASM project.</p>
+
+      <div class="game">
+        <p><span id="currentPlayer" ></span></p>
+        <div id="winnerMessage" style="display: none">
+          <p><span id="winnerAnnouncement"></span></p>
+          <button id="resetButton" class="button-2" role="button">Reset</button>
+        </div>
+        <canvas id="board" class="no-winner"></canvas>
+
+        <details>
+          <summary>Details</summary>
+          <p class="stats"><span id="details"></span></p>
+        </details>
+      </div>
+    </div>
+    <script src="./bootstrap.js"></script>
+  </body>
+</html>
