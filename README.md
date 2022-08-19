@@ -6,6 +6,8 @@
 
 ## About
 
+To play go to: [twosails](https://twosails.github.io/tic-tac-toe/www/dist/)
+
 This is a static built tic-tac-toe game. Made to practise writing Rust and WASM Code.
 
 Uses a basic implementation of a Minimax algorithm to play as an opponent
